@@ -1,13 +1,12 @@
 import socket
 
 
-
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(('localhost', 8888))
 
 
 finished = False
-print('digite tt para terminar a conversa')
+print('tt = terminar execução')
 
 
 while not finished:
