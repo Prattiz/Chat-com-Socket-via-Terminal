@@ -6,18 +6,18 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(('localhost', 8888))
 
 
-terminado = False
+finished = False
 print('digite tt para terminar a conversa')
 
 
-while not terminado:
+while not finished:
 
-    client.send(input('Mensagem: ').encode('utf-8'))
+    client.send(input('Mensagem Cliente: ').encode('utf-8'))
     message = client.recv(1024).decode('utf-8')
 
 
     if message == 'tt':
-        terminado = True
+        finished = True
     else:
         print(message)
         

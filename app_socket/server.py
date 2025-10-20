@@ -20,7 +20,7 @@ while not terminado:
         terminado = True
     else:
         print(message)
-        client.send(input('Mensagem: ').encode('utf-8'))
+        client.send(input('Mensagem Servidor: ').encode('utf-8'))
 
 client.close()
 server.close()
